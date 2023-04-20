@@ -4,44 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ee4495e-c57e-4b8c-844e-e6bd7155522f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/baseInterfaces/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/baseInterfaces/Output.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/baseInterfaces/iApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/baseInterfaces/iCommandManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/baseInterfaces/iController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/baseInterfaces/iModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/baseInterfaces/iResourceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/commands/implementations/AboutDirectoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/commands/implementations/ChangeDirectoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/commands/implementations/CopyFileCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/commands/implementations/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/commands/implementations/HelpCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/commands/implementations/ReadFileCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/commands/implementations/RemovePathCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/consoleImplementation/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/consoleImplementation/ConsoleInputOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/dataStructs/Props.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/dataStructs/Req.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/dataStructs/Resp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/defaultImplementation/DefaultCommandManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/defaultImplementation/DefaultController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/defaultImplementation/DefaultModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/defaultImplementation/DefaultResourceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/exceptions/IncorrectDirectoryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/exceptions/InputEmptyCommandException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/exceptions/OutputEmptyViewException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/helpers/ArgsParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/helpers/ColoredStringBuilder.java" afterDir="false" />
+    <list default="true" id="5ee4495e-c57e-4b8c-844e-e6bd7155522f" name="Changes" comment="Project alpha v.0.1 was done...">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/commands/implementations/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/kpfu/itis/vaihdass/commands/implementations/ExitCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,8 +107,21 @@
       <workItem from="1681149780825" duration="11685000" />
       <workItem from="1681161726292" duration="5744000" />
       <workItem from="1681284790072" duration="10686000" />
-      <workItem from="1681329353158" duration="161000" />
+      <workItem from="1681329353158" duration="730000" />
+      <workItem from="1681392308540" duration="77000" />
+      <workItem from="1681817977153" duration="131000" />
+      <workItem from="1681993805033" duration="40000" />
+      <workItem from="1681996972976" duration="499000" />
+      <workItem from="1681997681484" duration="56000" />
     </task>
+    <task id="LOCAL-00001" summary="Project alpha v.0.1 was done...">
+      <created>1681329660613</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681329660613</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

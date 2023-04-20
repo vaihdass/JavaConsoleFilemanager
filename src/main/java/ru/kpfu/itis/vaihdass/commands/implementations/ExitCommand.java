@@ -10,7 +10,7 @@ public class ExitCommand implements Command {
 
     @Override
     public void execute(Props props, Resp resp, DefaultResourceManager resourceManager) {
-        System.exit(1);
+        System.exit(0);
     }
 
     @Override
