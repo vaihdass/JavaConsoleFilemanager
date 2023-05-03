@@ -1,14 +1,17 @@
 package ru.kpfu.itis.vaihdass.commands.implementations;
 
-import org.apache.commons.io.FileUtils;
 import ru.kpfu.itis.vaihdass.commands.Command;
-import ru.kpfu.itis.vaihdass.defaultImplementation.DefaultResourceManager;
 import ru.kpfu.itis.vaihdass.dataStructs.Props;
 import ru.kpfu.itis.vaihdass.dataStructs.Resp;
+import ru.kpfu.itis.vaihdass.defaultImplementation.DefaultResourceManager;
 import ru.kpfu.itis.vaihdass.helpers.ColoredStringBuilder;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.Objects;
 
 public class RemovePathCommand implements Command {
     private final String ABOUT_COMMAND = "Deletes the specified file or folder (recursively by default).\n" +
@@ -45,7 +48,7 @@ public class RemovePathCommand implements Command {
                 return;
             }
 
-            FileUtils.forceDelete(resourceManager.getCurrentDirectory().resolve(Paths.get(props.getArgs()[0]).normalize()).toFile());
+            deleteValidatedPath(resourceManager.getCurrentDirectory().resolve(Paths.get(props.getArgs()[0]).normalize()).toFile());
 
             if (!resourceManager.getCurrentDirectory().toFile().exists()) { // HOW?!?
                 resourceManager.setCurrentDirectory(resourceManager.getHomeDirectory().toString());
@@ -61,6 +64,21 @@ public class RemovePathCommand implements Command {
                             "'Remove command' <Path>.\n" +
                             "Arguments: <Path> of file/directory can be set relative to the current directory OR absolute.",
                     ColoredStringBuilder.AnsiColors.ANSI_RED.bold()));
+        }
+    }
+
+    private void deleteValidatedPath(File file) throws IOException {
+        try {
+            if (file.isFile()) {
+                Files.delete(file.toPath());
+                return;
+            }
+
+            //noinspection ResultOfMethodCallIgnored
+            Arrays.stream(Objects.requireNonNull(file.listFiles())).forEach(File::delete);
+            Files.delete(file.toPath());
+        } catch (IOException | SecurityException e) {
+            throw new IOException("Hasn't delete access to path.", e);
         }
     }
 
